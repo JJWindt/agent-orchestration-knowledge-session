@@ -1,0 +1,93 @@
+{
+  "objective": "Genereer per rij één korte, klantgerichte Nederlandse upsell-zin. Maximaal 100 tekens (incl. spaties), B1-niveau, actief, in 'je krijgt'-stijl. Beschrijf alleen het voordeel van de aangeboden waarde — noem of vergelijk de vorige waarde NIET.",
+  "max_chars": 100,
+  "reasoning_model": "gpt-5.4",
+  "allowed_generation_models": [
+    "gpt-4.1-mini",
+    "gpt-4.1-nano",
+    "gpt-5.4-mini",
+    "gpt-5.4-nano"
+  ],
+  "current_version": 5,
+  "iterations_run": 4,
+  "current_settings": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "max_output_tokens": 120
+  },
+  "prompt_versions": [
+    {
+      "version": 1,
+      "parent_version": null,
+      "note": "initial prompt",
+      "created_at": "2026-04-30T17:03:32",
+      "file": "prompts/v001.md"
+    },
+    {
+      "version": 2,
+      "parent_version": 1,
+      "note": "Created an initial prompt with explicit field restrictions, a hard 100-character cap, and a strong ban on comparative phrasing to keep lines customer-centric and non-comparative.",
+      "created_at": "2026-04-30T17:04:01",
+      "file": "prompts/v002.md"
+    },
+    {
+      "version": 3,
+      "parent_version": 2,
+      "note": "Revised the prompt to ban spec parroting entirely, force 'Je krijgt', require concrete everyday use cases, and add a clearer premium tonality rule for top-tier rows.",
+      "created_at": "2026-04-30T17:05:22",
+      "file": "prompts/v003.md"
+    },
+    {
+      "version": 4,
+      "parent_version": 3,
+      "note": "Added explicit tier build-up and scenario ladders so stronger offers feel distinct, plus a mandatory worry-free top-tier tone and a ban on vague or awkward phrasing.",
+      "created_at": "2026-04-30T17:07:44",
+      "file": "prompts/v004.md"
+    },
+    {
+      "version": 5,
+      "parent_version": 4,
+      "note": "Tightened the prompt with explicit grammar rules, a stronger ban on jargon and vague wording, and a more concrete worry-free top-tier style to improve naturalness and premium feel.",
+      "created_at": "2026-04-30T17:09:15",
+      "file": "prompts/v005.md"
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 1,
+      "prompt_version": 2,
+      "model": "gpt-5.4-mini",
+      "temperature": 0.2,
+      "approved": false,
+      "n_over_max_chars": 0,
+      "file": "iterations/iter-001.json"
+    },
+    {
+      "iteration": 2,
+      "prompt_version": 3,
+      "model": "gpt-5.4-mini",
+      "temperature": 0.1,
+      "approved": false,
+      "n_over_max_chars": 0,
+      "file": "iterations/iter-002.json"
+    },
+    {
+      "iteration": 3,
+      "prompt_version": 4,
+      "model": "gpt-5.4-mini",
+      "temperature": 0.1,
+      "approved": false,
+      "n_over_max_chars": 0,
+      "file": "iterations/iter-003.json"
+    },
+    {
+      "iteration": 4,
+      "prompt_version": 5,
+      "model": "gpt-5.4-mini",
+      "temperature": 0.0,
+      "approved": false,
+      "n_over_max_chars": 1,
+      "file": "iterations/iter-004.json"
+    }
+  ]
+}

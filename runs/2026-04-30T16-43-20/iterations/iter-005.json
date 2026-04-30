@@ -1,0 +1,14 @@
+{
+  "iteration": 5,
+  "prompt_version": 6,
+  "model": "gpt-5.4-mini",
+  "temperature": 0,
+  "max_output_tokens": 220,
+  "prompt": "Schrijf alleen de definitieve eindtekst van een Nederlands gedicht.\n\nDoel:\n- Grappig, droog, niet cringe.\n- Over een goblin of gremlins.\n- Niet over kikkers of andere dieren.\n- Exact 99 woorden totaal.\n\nBelangrijk voor het tellen:\n- Tel woorden alleen als stukken tekst tussen spaties.\n- Gebruik gewone, duidelijk gescheiden woorden.\n- Vermijd apostrofvormen, afkortingen, cijfers en streepjes.\n- Geen titel en geen extra uitleg.\n\nInterne werkwijze die je MOET volgen:\n1) Maak eerst intern een lijst van precies 99 woorden.\n2) Controleer intern woordpositie 1 tot en met 99.\n3) Vorm daarna pas het gedicht uit exact die 99 woorden, zonder woorden toe te voegen of te verwijderen.\n4) Controleer nogmaals dat het onderwerp klopt en dat de laatste zin de droge grap laat landen.\n5) Geef alleen het gedicht.",
+  "output": "In de kelder woont een goblin, klein en strak in zijn beleid.  \nHij rangschikt mijn schroeven op kleur, daarna op schaamte.  \nElke ochtend mist er iets, meestal geduld of een lepel.  \nHij noemt dat efficiëntie.  \nZijn glimlach heeft de warmte van een lege koelkast.  \nSoms hoor ik hem zuchten tussen de dozen.  \nDan weet ik: er is weer geen reden voor paniek,  \nmaar wel voor nieuwe sloten.  \nDe goblin knikt beleefd,  \nnoteert mijn klacht,  \nen steelt daarna de pen.  \nHij is geen monster.  \nAlleen iemand met een bijster praktische hobby en mijn huisvestingsprobleem.",
+  "verdict": {
+    "approved": false,
+    "critique": "Hard constraints: this is Dutch, on-topic (goblin, no frogs), but it is only 93 words, not the required exact 99. Quality-wise it’s actually decent: dry, coherent, and mildly funny without cringe; lines like ‘warmte van een lege koelkast’ work. What to change in the prompt/settings: explicitly instruct the model to do a final whitespace-based word count and revise until it reaches exactly 99 words before answering. You could also lower temperature slightly to reduce count drift. If you want it to feel more like a poem rather than witty free verse, add a requirement for clearer rhythm or light rhyme.",
+    "reason": "Rejected: the poem fails a hard constraint. Programmatic check shows 93 words, not exactly 99. It does appear to be Dutch, mentions a goblin, and avoids frogs; the tone is dry and reasonably funny without much cringe, but exact word count is mandatory."
+  }
+}
