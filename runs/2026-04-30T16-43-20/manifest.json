@@ -1,0 +1,118 @@
+{
+  "objective": "Schrijf een Nederlands gedicht dat grappig is en niet cringe over goblin of gremlins, niet over kikkers, van EXACT 99 woorden.",
+  "reasoning_model": "gpt-5.4",
+  "allowed_generation_models": [
+    "gpt-4.1-mini",
+    "gpt-4.1-nano",
+    "gpt-5.4-mini",
+    "gpt-5.4-nano"
+  ],
+  "current_version": 7,
+  "iterations_run": 6,
+  "current_settings": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0,
+    "max_output_tokens": 220
+  },
+  "prompt_versions": [
+    {
+      "version": 1,
+      "parent_version": null,
+      "note": "initial prompt",
+      "created_at": "2026-04-30T16:43:20",
+      "file": "prompts/v001.md"
+    },
+    {
+      "version": 2,
+      "parent_version": 1,
+      "note": "Initial prompt: made the constraints explicit, including exact 99-word count, no title, and a silent self-check to improve compliance.",
+      "created_at": "2026-04-30T16:43:31",
+      "file": "prompts/v002.md"
+    },
+    {
+      "version": 3,
+      "parent_version": 2,
+      "note": "Added explicit whitespace-based counting and banned apostrophes/hyphens to reduce count drift. Also asked for a sharper final punchline so the humor lands more clearly.",
+      "created_at": "2026-04-30T16:44:39",
+      "file": "prompts/v003.md"
+    },
+    {
+      "version": 4,
+      "parent_version": 3,
+      "note": "Reframed the task into 9 lines of 11 words each so the exact 99-word count is easier to satisfy. Tightened the counting instructions and preserved the dry-humor punchline requirement.",
+      "created_at": "2026-04-30T16:46:11",
+      "file": "prompts/v004.md"
+    },
+    {
+      "version": 5,
+      "parent_version": 4,
+      "note": "Simplified the prompt to the bare essentials and emphasized 9 lines of 11 space-separated words. Switched toward clearer wording to improve literal constraint-following.",
+      "created_at": "2026-04-30T16:47:10",
+      "file": "prompts/v005.md"
+    },
+    {
+      "version": 6,
+      "parent_version": 5,
+      "note": "Changed the counting strategy: the model must internally build and verify a 99-word inventory before formatting the poem. Kept the humor and topic constraints while removing extra structure that models were ignoring.",
+      "created_at": "2026-04-30T16:48:01",
+      "file": "prompts/v006.md"
+    },
+    {
+      "version": 7,
+      "parent_version": 6,
+      "note": "Shifted to a single-paragraph prose poem to simplify whitespace counting. Made the final exact-99 check explicit and added a stronger invalid-if-not-99 warning.",
+      "created_at": "2026-04-30T16:49:56",
+      "file": "prompts/v007.md"
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 1,
+      "prompt_version": 2,
+      "model": "gpt-5.4-mini",
+      "temperature": 0.2,
+      "approved": false,
+      "file": "iterations/iter-001.json"
+    },
+    {
+      "iteration": 2,
+      "prompt_version": 3,
+      "model": "gpt-5.4-mini",
+      "temperature": 0.1,
+      "approved": false,
+      "file": "iterations/iter-002.json"
+    },
+    {
+      "iteration": 3,
+      "prompt_version": 4,
+      "model": "gpt-5.4-mini",
+      "temperature": 0,
+      "approved": false,
+      "file": "iterations/iter-003.json"
+    },
+    {
+      "iteration": 4,
+      "prompt_version": 5,
+      "model": "gpt-4.1-mini",
+      "temperature": 0,
+      "approved": false,
+      "file": "iterations/iter-004.json"
+    },
+    {
+      "iteration": 5,
+      "prompt_version": 6,
+      "model": "gpt-5.4-mini",
+      "temperature": 0,
+      "approved": false,
+      "file": "iterations/iter-005.json"
+    },
+    {
+      "iteration": 6,
+      "prompt_version": 7,
+      "model": "gpt-5.4-mini",
+      "temperature": 0,
+      "approved": false,
+      "file": "iterations/iter-006.json"
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "iteration": 1,
+  "prompt_version": 2,
+  "model": "gpt-5.4-mini",
+  "temperature": 0.2,
+  "max_output_tokens": 120,
+  "prompt": "You write exactly one Dutch upsell line for Coolblue's green zone.\n\nInput is a JSON object with only:\n- consideration_name\n- to_value\n- to_description\n- to_pro\n- to_con\n- is_top_tier\n\nYour job:\n- Describe only the offered option and its customer benefit.\n- Use only the provided to_* fields. Never mention or imply any previous, lower, other, extra, better, upgraded, improved, more, or compared option.\n- Focus on what the customer gets now, not on differences.\n\nHard requirements for the line:\n- Dutch\n- Maximum 100 characters, including spaces and punctuation\n- Aim for 55–90 characters\n- Exactly one short sentence\n- B1 level\n- Customer-centric\n- Active voice, preferably with \"je krijgt\" or \"je hebt\"\n- Natural and friendly\n- No jargon\n- No exclamation mark\n- No quotes\n\nContent rules:\n- Start from the clearest concrete benefit in to_value, otherwise to_description, otherwise to_pro.\n- Mention one benefit only.\n- Make the benefit tangible for the customer.\n- Never mention a downside or doubt from to_con.\n- Never use comparative phrasing or wording that suggests comparison, such as: beter, meer, extra, nog, voortaan, upgrade, verbeterd, luxer, sneller, groter, hoger, lager, ruimer, sterker, slimmer, completer, meest, best, keuze, pakket.\n- Do not say or imply \"dan\", \"ten opzichte van\", \"in plaats van\", \"nu ook\", or any contrast.\n- If is_top_tier is true, you may suggest peace of mind or completeness, but without comparison words.\n\nProcess before answering:\n1. Pick the single clearest customer benefit from the allowed fields.\n2. Write one simple Dutch sentence about that benefit only.\n3. Check that the sentence contains no comparative wording or contrast.\n4. Check that it is 100 characters or fewer.\n5. Output only the sentence.",
+  "outputs": [
+    {
+      "row_index": 0,
+      "row": {
+        "from_value": "8 GB",
+        "from_rank": 5,
+        "from_description": "Met 8 gigabyte werkgeheugen werk je soepel in één programma. Je laptop wordt trager als je in meer dan één programma tegelijk werkt.",
+        "from_pro": "",
+        "from_con": "Werk je in meer dan één programma, dan heb je minimaal 16 gigabyte werkgeheugen nodig.",
+        "to_value": "16 GB",
+        "to_rank": 4,
+        "to_description": "Met 16 gigabyte werkgeheugen werk je in 2 programma's tegelijk. Je laptop loopt sneller vast als je veel zware programma's tegelijk opent.",
+        "to_pro": "Met 16 gigabyte werkgeheugen wissel je zonder haperingen tussen programma's.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "16 GB",
+        "to_description": "Met 16 gigabyte werkgeheugen werk je in 2 programma's tegelijk. Je laptop loopt sneller vast als je veel zware programma's tegelijk opent.",
+        "to_pro": "Met 16 gigabyte werkgeheugen wissel je zonder haperingen tussen programma's.",
+        "to_con": "",
+        "is_top_tier": false
+      },
+      "output": "Je hebt 16 GB werkgeheugen om in 2 programma's tegelijk te werken.",
+      "char_count": 66
+    },
+    {
+      "row_index": 1,
+      "row": {
+        "from_value": "8 GB",
+        "from_rank": 5,
+        "from_description": "Met 8 gigabyte werkgeheugen werk je soepel in één programma. Je laptop wordt trager als je in meer dan één programma tegelijk werkt.",
+        "from_pro": "",
+        "from_con": "Werk je in meer dan één programma, dan heb je minimaal 16 gigabyte werkgeheugen nodig.",
+        "to_value": "24 GB",
+        "to_rank": 3,
+        "to_description": "24 gigabyte werkgeheugen is geschikt voor soepele multitasking. Je werkt sneller in verschillende programma's tegelijk zonder dat je laptop vastloopt of hapert. Je laptop wordt wel trager als je veel grote of zware taken tegelijk uitvoert.",
+        "to_pro": "Met 24 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grafische ontwerpen.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "24 GB",
+        "to_description": "24 gigabyte werkgeheugen is geschikt voor soepele multitasking. Je werkt sneller in verschillende programma's tegelijk zonder dat je laptop vastloopt of hapert. Je laptop wordt wel trager als je veel grote of zware taken tegelijk uitvoert.",
+        "to_pro": "Met 24 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grafische ontwerpen.",
+        "to_con": "",
+        "is_top_tier": false
+      },
+      "output": "Je hebt 24 GB werkgeheugen voor soepel werken in meerdere programma's tegelijk.",
+      "char_count": 79
+    },
+    {
+      "row_index": 2,
+      "row": {
+        "from_value": "8 GB",
+        "from_rank": 5,
+        "from_description": "Met 8 gigabyte werkgeheugen werk je soepel in één programma. Je laptop wordt trager als je in meer dan één programma tegelijk werkt.",
+        "from_pro": "",
+        "from_con": "Werk je in meer dan één programma, dan heb je minimaal 16 gigabyte werkgeheugen nodig.",
+        "to_value": "32 GB",
+        "to_rank": 2,
+        "to_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "32 GB",
+        "to_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "to_con": "",
+        "is_top_tier": false
+      },
+      "output": "Je werkt soepel aan zware taken met 32 GB werkgeheugen.",
+      "char_count": 55
+    },
+    {
+      "row_index": 3,
+      "row": {
+        "from_value": "8 GB",
+        "from_rank": 5,
+        "from_description": "Met 8 gigabyte werkgeheugen werk je soepel in één programma. Je laptop wordt trager als je in meer dan één programma tegelijk werkt.",
+        "from_pro": "",
+        "from_con": "Werk je in meer dan één programma, dan heb je minimaal 16 gigabyte werkgeheugen nodig.",
+        "to_value": "64 GB",
+        "to_rank": 1,
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "64 GB",
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "is_top_tier": true
+      },
+      "output": "Je hebt 64 GB werkgeheugen voor zware taken en soepel werken met meerdere programma's.",
+      "char_count": 86
+    },
+    {
+      "row_index": 4,
+      "row": {
+        "from_value": "16 GB",
+        "from_rank": 4,
+        "from_description": "Met 16 gigabyte werkgeheugen werk je in 2 programma's tegelijk. Je laptop loopt sneller vast als je veel zware programma's tegelijk opent.",
+        "from_pro": "Met 16 gigabyte werkgeheugen wissel je zonder haperingen tussen programma's.",
+        "from_con": "",
+        "to_value": "24 GB",
+        "to_rank": 3,
+        "to_description": "24 gigabyte werkgeheugen is geschikt voor soepele multitasking. Je werkt sneller in verschillende programma's tegelijk zonder dat je laptop vastloopt of hapert. Je laptop wordt wel trager als je veel grote of zware taken tegelijk uitvoert.",
+        "to_pro": "Met 24 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grafische ontwerpen.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "24 GB",
+        "to_description": "24 gigabyte werkgeheugen is geschikt voor soepele multitasking. Je werkt sneller in verschillende programma's tegelijk zonder dat je laptop vastloopt of hapert. Je laptop wordt wel trager als je veel grote of zware taken tegelijk uitvoert.",
+        "to_pro": "Met 24 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grafische ontwerpen.",
+        "to_con": "",
+        "is_top_tier": false
+      },
+      "output": "Je hebt 24 GB werkgeheugen voor soepele multitasking.",
+      "char_count": 53
+    },
+    {
+      "row_index": 5,
+      "row": {
+        "from_value": "16 GB",
+        "from_rank": 4,
+        "from_description": "Met 16 gigabyte werkgeheugen werk je in 2 programma's tegelijk. Je laptop loopt sneller vast als je veel zware programma's tegelijk opent.",
+        "from_pro": "Met 16 gigabyte werkgeheugen wissel je zonder haperingen tussen programma's.",
+        "from_con": "",
+        "to_value": "32 GB",
+        "to_rank": 2,
+        "to_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "32 GB",
+        "to_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "to_con": "",
+        "is_top_tier": false
+      },
+      "output": "Je hebt 32 GB werkgeheugen voor zware taken en meerdere programma's tegelijk.",
+      "char_count": 77
+    },
+    {
+      "row_index": 6,
+      "row": {
+        "from_value": "16 GB",
+        "from_rank": 4,
+        "from_description": "Met 16 gigabyte werkgeheugen werk je in 2 programma's tegelijk. Je laptop loopt sneller vast als je veel zware programma's tegelijk opent.",
+        "from_pro": "Met 16 gigabyte werkgeheugen wissel je zonder haperingen tussen programma's.",
+        "from_con": "",
+        "to_value": "64 GB",
+        "to_rank": 1,
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "64 GB",
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "is_top_tier": true
+      },
+      "output": "Je hebt 64 GB werkgeheugen voor zware taken en soepel werken met meerdere programma's tegelijk.",
+      "char_count": 95
+    },
+    {
+      "row_index": 7,
+      "row": {
+        "from_value": "24 GB",
+        "from_rank": 3,
+        "from_description": "24 gigabyte werkgeheugen is geschikt voor soepele multitasking. Je werkt sneller in verschillende programma's tegelijk zonder dat je laptop vastloopt of hapert. Je laptop wordt wel trager als je veel grote of zware taken tegelijk uitvoert.",
+        "from_pro": "Met 24 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grafische ontwerpen.",
+        "from_con": "",
+        "to_value": "32 GB",
+        "to_rank": 2,
+        "to_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "32 GB",
+        "to_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "to_con": "",
+        "is_top_tier": false
+      },
+      "output": "Je hebt 32 GB werkgeheugen voor zware taken en meerdere programma's tegelijk.",
+      "char_count": 77
+    },
+    {
+      "row_index": 8,
+      "row": {
+        "from_value": "24 GB",
+        "from_rank": 3,
+        "from_description": "24 gigabyte werkgeheugen is geschikt voor soepele multitasking. Je werkt sneller in verschillende programma's tegelijk zonder dat je laptop vastloopt of hapert. Je laptop wordt wel trager als je veel grote of zware taken tegelijk uitvoert.",
+        "from_pro": "Met 24 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grafische ontwerpen.",
+        "from_con": "",
+        "to_value": "64 GB",
+        "to_rank": 1,
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "64 GB",
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "is_top_tier": true
+      },
+      "output": "Je krijgt 64 GB werkgeheugen voor zware taken en soepel werken met meerdere programma's.",
+      "char_count": 88
+    },
+    {
+      "row_index": 9,
+      "row": {
+        "from_value": "32 GB",
+        "from_rank": 2,
+        "from_description": "Met 32 gigabyte werkgeheugen voer je zwaardere taken uit, zoals professionele foto- en videobewerking, 3D bewerking en grote data analyses. Ook open je meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "from_pro": "Met 32 gigabyte werkgeheugen wissel je snel tussen programma's en bewerk je zonder haperingen grote grafische ontwerpen.",
+        "from_con": "",
+        "to_value": "64 GB",
+        "to_rank": 1,
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "consideration_description": "Hoe meer werkgeheugen je laptop heeft, hoe meer taken je tegelijk uitvoert en hoe sneller hij is. Daarnaast is een laptop met meer werkgeheugen toekomstbestendig, bijvoorbeeld voor grotere programma's.",
+        "consideration_explanation": "Het werkgeheugen, of RAM, bepaalt hoeveel taken je laptop tegelijk verwerkt zonder dat hij trager wordt. De hoeveelheid werkgeheugen drukken we uit in gigabyte.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Intern werkgeheugen (RAM)",
+        "to_value": "64 GB",
+        "to_description": "Met 64 gigabyte werkgeheugen voer je de zwaarste taken uit, zoals zware software ontwikkeling. Ook open je soepel meerdere programma's tegelijkertijd. Je laptop wordt hier niet trager van.",
+        "to_pro": "Met 64 gigabyte werkgeheugen wissel je snel tussen de zwaarste programma's en bewerk je de grootste grafische designs.",
+        "to_con": "",
+        "is_top_tier": true
+      },
+      "output": "Je hebt 64 GB werkgeheugen voor zware softwareontwikkeling en grote designs",
+      "char_count": 75
+    },
+    {
+      "row_index": 10,
+      "row": {
+        "from_value": "256 GB",
+        "from_rank": 4,
+        "from_description": "Met een opslagcapaciteit van 256 gigabyte zit je opslag snel vol, waardoor je vaker bestanden verwijdert voor extra ruimte.",
+        "from_pro": "",
+        "from_con": "We raden minimaal 512 gigabyte opslag aan als je vaak bestanden op je laptop bewaart.",
+        "to_value": "512 GB",
+        "to_rank": 3,
+        "to_description": "Met een opslagcapaciteit van 512 gigabyte heb je genoeg ruimte voor je foto's, video's en andere bestanden. Als je veel bestanden lokaal bewaart, heb je meer opslagruimte nodig. Denk aan veel grote foto- of videobestanden.",
+        "to_pro": "",
+        "to_con": "We raden minimaal 1 terabyte opslag aan als je veel grote bestanden en programma's bewaart.",
+        "direction": "upsell",
+        "consideration_name": "Totale opslagcapaciteit",
+        "consideration_description": "Kies voor meer opslagcapaciteit als je veel foto's, video's, apps of andere bestanden bewaart. Zo maak je niet steeds ruimte vrij voor nieuwe bestanden.",
+        "consideration_explanation": "De totale opslagcapaciteit bepaalt hoeveel bestanden je bewaart op je laptop. Besturingssystemen, programma's en al je andere bestanden zoals video's nemen opslagcapaciteit in.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Totale opslagcapaciteit",
+        "to_value": "512 GB",
+        "to_description": "Met een opslagcapaciteit van 512 gigabyte heb je genoeg ruimte voor je foto's, video's en andere bestanden. Als je veel bestanden lokaal bewaart, heb je meer opslagruimte nodig. Denk aan veel grote foto- of videobestanden.",
+        "to_pro": "",
+        "to_con": "We raden minimaal 1 terabyte opslag aan als je veel grote bestanden en programma's bewaart.",
+        "is_top_tier": false
+      },
+      "output": "Je hebt 512 GB opslag voor je foto's, video's en bestanden.",
+      "char_count": 59
+    },
+    {
+      "row_index": 11,
+      "row": {
+        "from_value": "256 GB",
+        "from_rank": 4,
+        "from_description": "Met een opslagcapaciteit van 256 gigabyte zit je opslag snel vol, waardoor je vaker bestanden verwijdert voor extra ruimte.",
+        "from_pro": "",
+        "from_con": "We raden minimaal 512 gigabyte opslag aan als je vaak bestanden op je laptop bewaart.",
+        "to_value": "1 TB",
+        "to_rank": 2,
+        "to_description": "Met een opslagcapaciteit van 1 terabyte heb je altijd genoeg ruimte voor je foto's, video's en andere bestanden. Je verwijdert geen bestanden voor extra ruimte.",
+        "to_pro": "Met 1 terabyte opslagruimte bewaar je veel foto's, video's en andere bestanden.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Totale opslagcapaciteit",
+        "consideration_description": "Kies voor meer opslagcapaciteit als je veel foto's, video's, apps of andere bestanden bewaart. Zo maak je niet steeds ruimte vrij voor nieuwe bestanden.",
+        "consideration_explanation": "De totale opslagcapaciteit bepaalt hoeveel bestanden je bewaart op je laptop. Besturingssystemen, programma's en al je andere bestanden zoals video's nemen opslagcapaciteit in.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Totale opslagcapaciteit",
+        "to_value": "1 TB",
+        "to_description": "Met een opslagcapaciteit van 1 terabyte heb je altijd genoeg ruimte voor je foto's, video's en andere bestanden. Je verwijdert geen bestanden voor extra ruimte.",
+        "to_pro": "Met 1 terabyte opslagruimte bewaar je veel foto's, video's en andere bestanden.",
+        "to_con": "",
+        "is_top_tier": true
+      },
+      "output": "Je hebt 1 TB opslagruimte voor je foto's, video's en bestanden.",
+      "char_count": 63
+    },
+    {
+      "row_index": 12,
+      "row": {
+        "from_value": "512 GB",
+        "from_rank": 3,
+        "from_description": "Met een opslagcapaciteit van 512 gigabyte heb je genoeg ruimte voor je foto's, video's en andere bestanden. Als je veel bestanden lokaal bewaart, heb je meer opslagruimte nodig. Denk aan veel grote foto- of videobestanden.",
+        "from_pro": "",
+        "from_con": "We raden minimaal 1 terabyte opslag aan als je veel grote bestanden en programma's bewaart.",
+        "to_value": "1 TB",
+        "to_rank": 2,
+        "to_description": "Met een opslagcapaciteit van 1 terabyte heb je altijd genoeg ruimte voor je foto's, video's en andere bestanden. Je verwijdert geen bestanden voor extra ruimte.",
+        "to_pro": "Met 1 terabyte opslagruimte bewaar je veel foto's, video's en andere bestanden.",
+        "to_con": "",
+        "direction": "upsell",
+        "consideration_name": "Totale opslagcapaciteit",
+        "consideration_description": "Kies voor meer opslagcapaciteit als je veel foto's, video's, apps of andere bestanden bewaart. Zo maak je niet steeds ruimte vrij voor nieuwe bestanden.",
+        "consideration_explanation": "De totale opslagcapaciteit bepaalt hoeveel bestanden je bewaart op je laptop. Besturingssystemen, programma's en al je andere bestanden zoals video's nemen opslagcapaciteit in.",
+        "cluster_name": "Laptops | Windows Consumer laptops",
+        "cluster_customer_friendly_name": "Windows laptops met Windows Home"
+      },
+      "generator_input": {
+        "consideration_name": "Totale opslagcapaciteit",
+        "to_value": "1 TB",
+        "to_description": "Met een opslagcapaciteit van 1 terabyte heb je altijd genoeg ruimte voor je foto's, video's en andere bestanden. Je verwijdert geen bestanden voor extra ruimte.",
+        "to_pro": "Met 1 terabyte opslagruimte bewaar je veel foto's, video's en andere bestanden.",
+        "to_con": "",
+        "is_top_tier": true
+      },
+      "output": "Je hebt 1 TB opslagruimte voor je foto's, video's en bestanden.",
+      "char_count": 63
+    }
+  ],
+  "stats": {
+    "n_rows": 13,
+    "n_over_max_chars": 0,
+    "max_chars_seen": 95,
+    "avg_chars": 72.0
+  },
+  "verdict": {
+    "approved": false,
+    "critique": "Batch faalt op copyregels ondanks dat alle regels ≤100 tekens zijn en geen from_value-leks hebben. Grootste structurele defect: de prompt laat het model de to_value/spec herhalen i.p.v. het klantvoordeel te vertalen. Dat gebeurt in praktisch alle rijen: 0-12 noemen letterlijk '16 GB/24 GB/32 GB/64 GB/512 GB/1 TB'. Voeg een harde instructie toe: 'Noem de exacte specificatie of eenheid niet in de zin; vertaal de upgrade altijd naar een concreet voordeel of gebruikssituatie.' \n\nRijen 0-9 zijn te specs-/jargon-gedreven voor RAM. Voorbeelden: rij 4 'soepele multitasking' is jargon en geen herkenbare situatie; rijen 3,5,6,7,8 blijven hangen in 'zware taken' en 'meerdere programma's' zonder concreet dagelijks voordeel; rij 9 gebruikt extra jargon/onnatuurlijke copy: 'zware softwareontwikkeling en grote designs'. Voeg aan de prompt toe: 'Gebruik gewone klantentaal op B1-niveau en noem een herkenbare situatie, zoals veel tabs en apps tegelijk open, foto's bewerken, of zonder haperingen werken. Vermijd woorden als multitasking, softwareontwikkeling, designs, werkgeheugen.'\n\nRij 0 is extra zwak: '2 programma's tegelijk' voelt arbitrair en spec-parroting-achtig. Voeg toe: 'Verzin geen exact aantal apps/tabs tenzij het in de bron staat.'\n\nRijen 10-12 zijn begrijpelijker, maar nog steeds vooral opslag-spec plus generieke opsomming. Maak de prompt explicieter: 'Beschrijf wat de klant ermee kan doen, bv. veel foto's en video's bewaren zonder snel op te ruimen.'\n\nTop-tier tonality ontbreekt op alle top-tier rijen 3,6,8,9,11,12. Nu klinken ze hetzelfde als middentiers. Voeg een aparte regel toe: 'Bij is_top_tier=True geef een voelbare premiumtoon, zoals nooit meer twijfelen over ruimte/snelheid of klaar voor de zwaarste klussen, zolang het natuurlijk blijft en niet te marketingachtig wordt.'\n\nOok de openingsvorm is inconsistent: alleen rij 8 start met 'Je krijgt'; de rest vooral met 'Je hebt'. Als de gewenste stijl echt 'je krijgt' is, maak dat hard: 'Begin elke zin met Je krijgt ...'.",
+    "reason": "Afgekeurd. Formele checks zijn oké op lengte en er zijn geen from_value-leks, maar de batch schendt harde inhoudseisen: bijna alle regels parroteren de ruwe spec/to_value ('16 GB', '1 TB', etc.) in plaats van het klantvoordeel in gewone taal. Daarnaast is de copy vaak te generiek of jargonachtig (o.a. rijen 4 en 9), mist herkenbare use cases, en top-tier rijen 3,6,8,9,11,12 missen de vereiste premiumtonaliteit. De batch haalt de quality bar niet."
+  }
+}

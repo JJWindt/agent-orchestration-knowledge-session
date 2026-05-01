@@ -1,11 +1,10 @@
 import json
-import inspect
 from dataclasses import dataclass
 from typing import List, Callable, Optional
 
 from pydantic import BaseModel
 from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import SystemMessage, AIMessage, ToolMessage
+from langchain_core.messages import SystemMessage, ToolMessage
 from langchain_core.tools import StructuredTool
 
 
@@ -51,11 +50,10 @@ def run_full_turn(agent: Agent, messages: list) -> Response:
             else llm.invoke(full_messages)
         )
 
-        message = AIMessage(
-            content=response.content or "",
-            tool_calls=response.tool_calls if response.tool_calls else [],
-        )
-        messages.append(message)
+        # Append the LLM's AIMessage as-is. Reconstructing it would drop
+        # additional_kwargs / response_metadata that the Responses API needs
+        # for reasoning items to round-trip correctly.
+        messages.append(response)
 
         if response.content:
             print(f"{current_agent.name}: {response.content}")
